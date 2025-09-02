@@ -10,4 +10,4 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 
 COPY . .
 
-CMD ["gunicorn", "workoutlog.wsgi:application", "--bind", "0.0.0.0:8000"]
+CMD ["gunicorn", "TechBridge.wsgi:application", "--bind", "0.0.0.0:8000"]

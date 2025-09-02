@@ -73,25 +73,25 @@ WSGI_APPLICATION = 'TechBridge.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'Lucifer',
-        'ENFORCE_SCHEMA': False,
-        'CLIENT': {
-            'host': 'mongodb://localhost:27017',
-        }
-    }
-}
-
-# for sqlite3
+#
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',  # database file will be created in your project root
+#         'ENGINE': 'djongo',
+#         'NAME': 'Lucifer',
+#         'ENFORCE_SCHEMA': False,
+#         'CLIENT': {
+#             'host': 'mongodb://localhost:27017',
+#         }
 #     }
 # }
+
+#for sqlite3
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',  # database file will be created in your project root
+    }
+}
 
 
 
