@@ -1,5 +1,5 @@
 """
-URL configuration for Problem project.
+URL configuration for TechBridge project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.2/topics/http/urls/
@@ -22,6 +22,6 @@ from django.contrib.auth.urls import views as auth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Lucifer/', include('Lucifer.urls')),
+    path('', include('Lucifer.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
